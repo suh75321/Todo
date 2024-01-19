@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://db.akenemuwmwbarcaefoup.supabase.co:5432/postgres
+    username: postgres
+    password: akehzkal13!
+jpa:
+  properties:
+    hibernate:
+      show_sql: true
+      format_sql: true
+      highlight_sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        orm:
+          jdbc:
+            bind: trace
+      springframework: # 추가!
+        security: debug
+auth:
+  jwt:
+    issuer: team.sparta.com
+    secret: PO4c8z41Hia5gJG3oeuFJMRYBB4Ws4aZ
+    accessTokenExpirationHour: 168
